@@ -237,11 +237,11 @@ echo "  > clapack"
   
   set +e
   echo "    - building clapack"
-  make all -j > "$TOOLS_LOG_PATH/clapack_1_build.log" 2>&1
+  make all -j > "$TOOLS_LOG_PATH/clapack_1_build.log" 
   set -e
   
   echo "    - installing clapack"
-  make lapack_install > "$TOOLS_LOG_PATH/clapack_2_install.log" 2>&1
+  make lapack_install > "$TOOLS_LOG_PATH/clapack_2_install.log" 
 
   sudo cp -Rf INCLUDE "$INC_PATH/clapack"
   
